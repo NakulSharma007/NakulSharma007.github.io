@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nakul Sharma — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">NS<span class="gold">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">NAKUL</div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <p class="hero-tag reveal"><span class="mono">&lt;</span> Developer & Communicator <span class="mono">/&gt;</span></p>
+        <h1 class="hero-name reveal">
+          <span class="line">Nakul</span>
+          <span class="line italic gold">Sharma</span>
+        </h1>
+        <p class="hero-sub reveal">Student at Chandigarh University — crafting code, building ideas, and growing every day.</p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-scroll reveal">
+          <span class="mono small">scroll to explore</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="photo-frame">
+          <div class="photo-border"></div>
+          <img src="profile.png" alt="Nakul Sharma" class="hero-photo" />
+          <div class="photo-tag mono">Nakul Sharma <span class="gold">—</span> CU</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating chips -->
+    <div class="chip chip-1 mono">HTML</div>
+    <div class="chip chip-2 mono">CSS</div>
+    <div class="chip chip-3 mono">JavaScript</div>
+    <div class="chip chip-4 mono">Python</div>
+    <div class="chip chip-5 mono">C</div>
+    <div class="chip chip-6 mono">R</div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="about section" id="about">
+    <div class="section-label mono">01 — About</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="section-title">Who I <span class="italic gold">Am</span></h2>
+        <p class="about-text">
+          I'm <strong>Nakul Sharma</strong>, a passionate student at <strong>Chandigarh University</strong> navigating the exciting intersection of technology and communication. As a beginner with a growth mindset, I'm constantly learning, building, and pushing my limits — one project at a time.
+        </p>
+        <p class="about-text">
+          I believe being a beginner is a superpower. It means every day holds the potential for a breakthrough. My journey in coding is just getting started, and I tend to learn more and improve myself over time.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num gold">3+</span>
+            <span class="stat-label mono">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num gold">6+</span>
+            <span class="stat-label mono">Languages Learned</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num gold">∞</span>
+            <span class="stat-label mono">Growth Mindset</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="soft-skills-card">
+          <p class="card-label mono">Beyond the Code</p>
+          <ul class="soft-list">
+            <li><span class="gold">→</span> Business Communication</li>
+            <li><span class="gold">→</span> Public Speaking</li>
+            <li><span class="gold">→</span> Business Management</li>
+            <li><span class="gold">→</span> Marketing & Sales</li>
+          </ul>
+          <p class="card-note mono">A beginner who is always eager to grow and improve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section class="skills section" id="skills">
+    <div class="section-label mono">02 — Skills</div>
+    <h2 class="section-title">Tech <span class="italic gold">Stack</span></h2>
+    <div class="skills-grid">
+
+      <div class="skill-card" data-skill="HTML">
+        <div class="skill-icon">&#60;/&#62;</div>
+        <h3>HTML</h3>
+        <p>Semantic markup and structured web content</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="skill-card" data-skill="CSS">
+        <div class="skill-icon">&#123;&#125;</div>
+        <h3>CSS</h3>
+        <p>Styling, animations and responsive layouts</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+      </div>
+
+      <div class="skill-card" data-skill="JS">
+        <div class="skill-icon">JS</div>
+        <h3>JavaScript</h3>
+        <p>Interactive and dynamic web functionality</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+      </div>
+
+      <div class="skill-card" data-skill="PY">
+        <div class="skill-icon">Py</div>
+        <h3>Python</h3>
+        <p>Scripting, automation and problem-solving</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+      </div>
+
+      <div class="skill-card" data-skill="C">
+        <div class="skill-icon">C</div>
+        <h3>C Language</h3>
+        <p>Systems programming and DSA fundamentals</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+      </div>
+
+      <div class="skill-card" data-skill="R">
+        <div class="skill-icon">R</div>
+        <h3>R Language</h3>
+        <p>Data analysis and statistical programming</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+      </div>
+
+    </div>
+    <div class="dsa-banner">
+      <span class="mono small gold">+ Data Structures & Algorithms</span> — practiced in C
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="projects section" id="projects">
+    <div class="section-label mono">03 — Projects</div>
+    <h2 class="section-title">My <span class="italic gold">Work</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="proj-num mono">01</div>
+        <div class="proj-content">
+          <div class="proj-tag mono">HTML · CSS · JavaScript</div>
+          <h3 class="proj-title">Web Designing Project</h3>
+          <p class="proj-desc">A fully functional website built from scratch using HTML, CSS, and JavaScript — showcasing front-end fundamentals and design sensibility.</p>
+          <a href="https://github.com/NakulSharma007/web-designing" target="_blank" rel="noopener noreferrer" class="proj-link">
+            View on GitHub <span class="arrow">→</span>
+          </a>
+        </div>
+        <div class="proj-glow"></div>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-num mono">02</div>
+        <div class="proj-content">
+          <div class="proj-tag mono">C Language · DSA</div>
+          <h3 class="proj-title">Phone Book Management System</h3>
+          <p class="proj-desc">A console-based application in C for managing contacts — featuring add, search, delete, and display operations using structured data.</p>
+          <a href="https://github.com/NakulSharma007/c-projects" target="_blank" rel="noopener noreferrer" class="proj-link">
+            View on GitHub <span class="arrow">→</span>
+          </a>
+        </div>
+        <div class="proj-glow"></div>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-num mono">03</div>
+        <div class="proj-content">
+          <div class="proj-tag mono">R Language · Data Analysis</div>
+          <h3 class="proj-title">Student Relation Management</h3>
+          <p class="proj-desc">An R programming project for managing and analyzing student data — demonstrating statistical thinking and data manipulation skills.</p>
+          <a href="https://github.com/NakulSharma007/R-projectory" target="_blank" rel="noopener noreferrer" class="proj-link">
+            View on GitHub <span class="arrow">→</span>
+          </a>
+        </div>
+        <div class="proj-glow"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="contact section" id="contact">
+    <div class="section-label mono">04 — Contact</div>
+    <div class="contact-inner">
+      <h2 class="section-title">Let's <span class="italic gold">Connect</span></h2>
+      <p class="contact-sub">Whether you want to collaborate on a project, discuss ideas, or just say hello — my inbox is open.</p>
+
+      <div class="contact-links">
+        <a href="https://github.com/NakulSharma007" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="cc-icon">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </span>
+          <span class="cc-label">GitHub</span>
+          <span class="cc-val mono">NakulSharma007</span>
+        </a>
+
+        <a href="mailto:nakulsharma@example.com" class="contact-card">
+          <span class="cc-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0-9.75 6.75L2.25 6.75"/></svg>
+          </span>
+          <span class="cc-label">Email</span>
+          <span class="cc-val mono">Get In Touch</span>
+        </a>
+      </div>
+
+      <a href="mailto:nakulsharma@example.com" class="btn-primary big-btn">
+        ✉ Contact Me
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="mono small">© 2025 Nakul Sharma — Built with passion &amp; code.</p>
+    <p class="mono small gold">Chandigarh University</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
